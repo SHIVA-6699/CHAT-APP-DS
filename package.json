@@ -2,11 +2,12 @@
   "name": "chat",
   "version": "1.0.0",
   "main": "server.js",
+	"scripts": {
+    "server": "nodemon backend/server.js",
+		"start": "node backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+	},
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/server.js"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
